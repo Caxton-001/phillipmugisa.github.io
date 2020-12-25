@@ -63,7 +63,7 @@
     </div>
     <script>
         let msgs = ["I am forever thankful to God for having you in my life, and I wish you a joyful celebration of this holiday season.","Wishing you a pleasant time throughout this Christmas season. May you find countless successes and glory in the coming years. Happy Christmas!","May all the sweet magic of Christmas conspire to gladden your heart and fill every desire. Wish you a Merry Christmas and a Happy New Year.","Hope this Christmas brings you new opportunities and gives you great ideas. Let Christmas also bring you wealth and happiness. Have a great time with friends and family. Merry Christmas","Thanks for the support and care you have always given me. May this festive season strengthen our friendship so it can endure any difficulty life throws at us!","I wish that your Christmas season shimmers with love and kindness. May faith and serenity descend on you. Have a safe and Merry Christmas dear friend."]
-        let i = 0
+        let i = Math.floor(Math.random() * 4)
         document.querySelector("#xmas_msg").innerHTML = msgs[i]
         setInterval(()=>{
             i++
