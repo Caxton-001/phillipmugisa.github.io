@@ -53,7 +53,7 @@
 </style>
 <body>
         <div class="img_cont">
-            <img src="./me_1.jpg" alt="" id="pic">
+            <img src="./me_1.jpg" alt="">
             <div class="card">
                 <p id="xmas_msg"></p>
             </div>
@@ -73,16 +73,6 @@
             }
             console.log(i+" : "+msgs[i])
         }, 10000)
-
-        Let c = 0
-        let links = ["./me_1.jpg","./me.jpg"]
-        setInterval(()=>{
-         c++
-         document.querySelector('#pic').src = links[c]
-         if(c > 1){
-            c = 0
-         }
-        },20000)
     </script>
 </body>
 </html>
