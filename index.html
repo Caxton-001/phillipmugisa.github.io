@@ -24,21 +24,14 @@
         .img_cont{
             border: 1px solid #000;
             width: 100%;
-            height: 100vh;
-            position: absolute;
-            right: 0;
-            top: 0;
+            height: 100%;
             background-color: black;
             display: block;
         }
         .img_cont img{
             width: 100%;
-            height: 100vh;
-            transform: scale(3);
-            transform: translateX(30%);
-            -webkit-transform:translateX(30%);
-            -moz-transform:translateX(30%);
-            -o-transform:translateX(30%); 
+            height: 100%;
+            transform: scale(1.4);
         }
         .linked_img{
         }
@@ -46,23 +39,27 @@
             width: 100%;
             height: 50vh;
             position: fixed;
-            bottom: 5%;
+            top: 50%;
             left: 0%;
             width: 70vw;
             height: 40vh;
         }
         #xmas_msg{
-            position: fixed;
-            top: 3%;
-            left: 3%;
             color: rgb(255,215,0);
             padding: 5px;
             font-size: 18px;
-            max-height: 40vh;
-            max-width: 30vh;
-            text-align: left;
+            text-align: center;
             line-height: 30px;
             transition: 0.3s;
+        }
+        .card{
+            border: 1px solid rgb(255,215,0);
+            width: 80%;
+            position: fixed;
+            height: 30vh;
+            top: 55%;
+            left: 10%;
+            background-color: rgba(0, 0, 0, 0.521);
         }
     }    
 </style>
@@ -71,13 +68,16 @@
         <div class="img_cont">
             <img src="./me_1.jpg" alt="">
         </div>
-        <div class="linked_img">
+        <!-- <div class="linked_img">
             <img src="./mas.png" alt="">
+        </div> -->
+        <div class="card">
+            <p id="xmas_msg"></p>
         </div>
-        <p id="xmas_msg"></p>
+        
     </div>
     <script>
-        let msgs = ["May all the sweet magic of Christmas conspire to gladden your heart and fill every desire. Wish you a Merry Christmas and a Happy New Year.","Hope this Christmas brings you new opportunities and gives you great ideas. Let Christmas also bring you wealth and happiness. Have a great time with friends and family. Merry Christmas","Thanks for the support and care you have always given me. May this festive season strengthen our friendship so it can endure any difficulty life throws at us!","I wish that your Christmas season shimmers with love and kindness. May faith and serenity descend on you. Have a safe and Merry Christmas dear friend."]
+        let msgs = ["I am forever thankful to God for having you in my life, and I wish you a joyful celebration of this holiday season.","Wishing you a pleasant time throughout this Christmas season. May you find countless successes and glory in the coming years. Happy Christmas!","May all the sweet magic of Christmas conspire to gladden your heart and fill every desire. Wish you a Merry Christmas and a Happy New Year.","Hope this Christmas brings you new opportunities and gives you great ideas. Let Christmas also bring you wealth and happiness. Have a great time with friends and family. Merry Christmas","Thanks for the support and care you have always given me. May this festive season strengthen our friendship so it can endure any difficulty life throws at us!","I wish that your Christmas season shimmers with love and kindness. May faith and serenity descend on you. Have a safe and Merry Christmas dear friend."]
         let i = 0
         document.querySelector("#xmas_msg").innerHTML = msgs[i]
         setInterval(()=>{
