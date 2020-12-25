@@ -31,7 +31,7 @@
         .img_cont img{
             width: 100%;
             height: 100%;
-            transition: .3s;
+            transition: 0.3s;
         }
         #xmas_msg{
             color: rgb(255,215,0);
@@ -68,12 +68,12 @@
         setInterval(()=>{
             i++
             document.querySelector("#xmas_msg").innerHTML = msgs[i]
-            if(i > msgs.length - 1) {
-                i = 0
+            if(i > msgs.length - 1) {i = 0} ;
+            if(msgs[i] == undefined){
                 document.querySelector("#xmas_msg").innerHTML = msgs[0]
-            } ;
+            }
             console.log(i+" : "+msgs[i])
-        }, 10000)
+        }, 8000)
 
         let c = 0
         let links = ["./Me.jpg","./me_1.jpg"]
@@ -84,7 +84,7 @@
                 c = 0
                 document.querySelector("#pic").src = links[c]
             } ;
-        }, 10000)
+        }, 5000)
     </script>
 </body>
 </html>
