@@ -31,6 +31,7 @@
         .img_cont img{
             width: 100%;
             height: 100%;
+            transition: .3s;
         }
         #xmas_msg{
             color: rgb(255,215,0);
@@ -53,7 +54,7 @@
 </style>
 <body>
         <div class="img_cont">
-            <img src="./me_1.jpg" alt="">
+            <img src="./me_1.jpg" alt="" id="pic">
             <div class="card">
                 <p id="xmas_msg"></p>
             </div>
@@ -67,11 +68,22 @@
         setInterval(()=>{
             i++
             document.querySelector("#xmas_msg").innerHTML = msgs[i]
-            if(i > msgs.length - 1) {i = 0} ;
-            if(msgs[i] == undefined){
+            if(i > msgs.length - 1) {
+                i = 0
                 document.querySelector("#xmas_msg").innerHTML = msgs[0]
-            }
+            } ;
             console.log(i+" : "+msgs[i])
+        }, 10000)
+
+        let c = 0
+        let links = ["./Me.jpg","./me_1.jpg"]
+        setInterval(()=>{
+            c++
+            document.querySelector("#pic").src = links[c]
+            if(c > 1) {
+                c = 0
+                document.querySelector("#pic").src = links[c]
+            } ;
         }, 10000)
     </script>
 </body>
