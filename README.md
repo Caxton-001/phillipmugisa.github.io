@@ -1,12 +1,15 @@
 # stono
-Official Website for stono. <br>
-Stono is an Ugandan business dealing in shoes for both men and women.
+Official Website for stono.
+[Visit Website](https://phillipmugisa.github.io/templates/index.html)
+#### Stono is an Ugandan business dealing in shoes for both men and women.
 ___
 > ### __Author__: Phillip Mugisa
 > #### _Email: phillipmugisa4@gmail.com_
 > ##### _Website_: ~~www.phillipmugisa.com~~
 > [GitHub -](https://github.com/phillipmugisa) 
 > [Instagram](https://www.instagram.com/phillip_03_/?hl=en)
+
+
 
 
 ### Languages Used
