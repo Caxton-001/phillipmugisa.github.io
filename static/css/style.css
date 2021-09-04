@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: system-ui, sans-serif;
 }
 :root {
     --whiteColor: #ffffff;
@@ -36,7 +36,7 @@ img{
     padding: .6rem 1.3rem;
     border: 2px solid transparent;
     outline: none;
-    font-size: 3rem;
+    font-size: 1rem;
     transition: .3s ease-in-out;
     cursor: pointer;
     text-align: center;
@@ -54,7 +54,7 @@ img{
     padding: .6rem 1rem;
     border: 2px solid transparent;
     outline: none;
-    font-size: .8rem;
+    font-size: .9rem;
     transition: .3s ease-in-out;
     cursor: pointer;
     text-align: center;
