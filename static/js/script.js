@@ -14,10 +14,10 @@ document.querySelector("#scrollTop")
 
 
 const showLoader = () => {
-    document.querySelector("body").style.overflow = "hidden"
+    document.querySelector("body").classList.toggle("hidden")
     document.querySelector(".loader").classList.toggle("show")
     setTimeout(() => {
-        document.querySelector("body").style.overflow = "auto"
+        document.querySelector("body").classList.toggle("hidden")
         document.querySelector(".loader").classList.toggle("show")
     },2000)
 }
@@ -25,15 +25,17 @@ const showLoader = () => {
 const menu_btn = document.querySelector("#menu-btn");
 const mb_tabs = document.querySelector(".mb-tabs");
 menu_btn.addEventListener("click", () => {
+    document.querySelector("body").classList.toggle("hidden")
     mb_tabs.classList.toggle("showMdTabs")
 })
 
 const hideMobileTabs = () => {
+    document.querySelector("body").style.overflow = "auto"
     document.querySelector(".mb-tabs").classList.remove("showMdTabs")
     showLoader()
 }
 
-document.querySelectorAll(".tabs a").forEach((tab) => {
+document.querySelectorAll(".mb-tabs a").forEach((tab) => {
     tab.addEventListener("click", hideMobileTabs,)
 })
 
@@ -44,29 +46,21 @@ const brand_list = document.querySelector("#brand-list");
 
 gender_select.addEventListener("click", () => {
     gender_list.classList.toggle("show-filter")
-    // gender_list.style.display = gender_list.style.display === "none" ?
-    //      "block" : "none";
 })
 brand_select.addEventListener("click", () => {
     brand_list.classList.toggle("show-filter")
-    // brand_list.style.display = brand_list.style.display === "none" ?
-    //      "block" : "none";
 })
 
 document.querySelectorAll(".gender-option").forEach((option) => {
     option.addEventListener("click", () => {
         gender_select.querySelector(".name").textContent = option.textContent;
         gender_list.classList.toggle("show-filter") 
-        // gender_list.style.display = gender_list.style.display === "none" ?
-        //      "block" : "none";
     })
 })
 document.querySelectorAll(".brand-option").forEach((option) => {
     option.addEventListener("click", () => {
         brand_select.querySelector(".name").textContent = option.textContent;
         brand_list.classList.toggle("show-filter") 
-        // brand_list.style.display = brand_list.style.display === "none" ?
-        //      "block" : "none";
     })
 })
 
