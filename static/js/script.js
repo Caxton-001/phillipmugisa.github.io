@@ -44,12 +44,17 @@ const gender_list = document.querySelector("#gender-list");
 const brand_select = document.querySelector("#brand-select");
 const brand_list = document.querySelector("#brand-list");
 
-gender_select.addEventListener("click", () => {
-    gender_list.classList.toggle("show-filter")
-})
-brand_select.addEventListener("click", () => {
-    brand_list.classList.toggle("show-filter")
-})
+try{
+    gender_select.addEventListener("click", () => {
+        gender_list.classList.toggle("show-filter")
+    })
+    brand_select.addEventListener("click", () => {
+        brand_list.classList.toggle("show-filter")
+    })
+}
+catch(err){
+    // console.error(err)
+}
 
 document.querySelectorAll(".gender-option").forEach((option) => {
     option.addEventListener("click", () => {
@@ -72,3 +77,33 @@ VanillaTilt.init(document.querySelector(".intro-pics"), {
 //It also supports NodeList
 VanillaTilt.init(document.querySelectorAll(".intro-pics"));
 
+
+
+const cartCountInput = document.querySelector("#cartCount");
+const totalItemPrice = document.querySelector(".item-price");
+
+document.querySelector("#decrease-count")
+.addEventListener("click", (e) => {
+    e.preventDefault();
+    let cart_count = parseInt(cartCountInput.value) || 0;
+    
+    if (cart_count > 0)
+    {
+        let new_count = cart_count - 1
+        cartCountInput.value = new_count;
+
+        totalItemPrice.textContent = parseInt(totalItemPrice.textContent) - (parseInt(totalItemPrice.textContent) / cartCountInput.value)
+    }
+    
+
+});
+document.querySelector("#increase-count")
+.addEventListener("click", (e) => {
+    e.preventDefault();
+    let cart_count = parseInt(cartCountInput.value) || 0;
+    let new_count = cart_count + 1;
+    cartCountInput.value = new_count;
+
+    // change total price
+    totalItemPrice.textContent = parseInt(totalItemPrice.textContent) + (parseInt(totalItemPrice.textContent) / cartCountInput.value)
+});
