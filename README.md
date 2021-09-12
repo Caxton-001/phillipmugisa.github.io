@@ -35,7 +35,7 @@ ___
     export $FLASK_ENV=development
 ```
 
-* [ ] FrontEnd
+* [*] FrontEnd
 * [ ] BackEnd
 * [ ] Mobile App
 
