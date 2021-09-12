@@ -17,7 +17,8 @@
                 </div>
                 <div class="tabs">
                     <a href="./#Home" class="cta btn-secondary">Home</a>
-                    <a href="./store.html#Store" class="cta btn-secondary">Store</a>
+                    <a href="
+                    #Store" class="cta btn-secondary">Store</a>
                     <a href="./about_us.html#About_us" class="cta btn-secondary">About Us</a>
                     <a href="./cart.html#Cart" class="cta btn-secondary">Cart</a>
                 </div>
@@ -47,95 +48,124 @@
         </nav>
     </header>
     <main>
-        <section class="item-details">
-            <div class="images">
-                <div class="img-area">
-                    <picture>
-                        <img src="https://images.unsplash.com/photo-1579446565308-427218a2c60e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTF8fHNuZWFrZXJzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-                    </picture>
+        <section class="store">
+            <div class="product-filter">
+                <div class="title">
+                    <h2>Store</h2>
                 </div>
-                <div class="img-area">
-                    <picture>
-                        <img src="https://images.unsplash.com/photo-1581619883162-4a1aa0a6a0c4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIzfHxzbmVha2Vyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-                    </picture>
-                </div>
-                <div class="img-area">
-                    <picture>
-                        <img src="https://images.unsplash.com/photo-1580906853149-f82f7601d205?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA5fHxzbmVha2Vyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-                    </picture>
-                </div>
-                <div class="img-area">
-                    <picture>
-                        <img src="https://images.unsplash.com/photo-1621665421558-831f91fd0500?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA1fHxzbmVha2Vyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-                    </picture>
-                </div>
-            </div>
-            <div class="item-discription">
-                <div class="item-pre-details">
-                    <h1 class="item-name">Shoe Name</h1>
-                    <h2 class="item-price">100000</h2>
-                    <!-- <span class="item-brand">Nike</span> -->
-                </div>
-                <form action="" method="post">
-                    <div class="item-count">
-                        <button class="cta btn-primary item-count" id="decrease-count">-</button>
-                        <input type="number" name="" id="cartCount">
-                        <button class="cta btn-primary item-count" id="increase-count">+</button>
+                <div class="filters">
+                    <div class="filter">
+                        <button class="cta btn-secondary" id="gender-select">
+                            <span class="name">Men</span>
+                            <span class="arrow">
+                                <i class="fa fa-chevron-down"></i>
+                            </span>
+                        </button>
+                        <div class="filter-options" id="gender-list">
+                            <ul>
+                                <li class="cta btn-secondary gender-option">Men</li>
+                                <li class="cta btn-secondary gender-option">Ladies</li>
+                                <li class="cta btn-secondary gender-option">Kids</li>
+                            </ul>
+                        </div>
                     </div>
-                    <fieldset>
-                        <label id="fieldset-label">Shoe Size: </label>
-                        <div>
-                            <input type="radio" name="shoe-size" id="price-1">
-                            <label for="price-1">42</label>
+                    <div class="filter">
+                        <button class="cta btn-secondary" id="brand-select">
+                            <span class="name">All</span>
+                            <span class="arrow">
+                                <i class="fa fa-chevron-down"></i>
+                            </span>
+                        </button>
+                        <div class="filter-options" id="brand-list">
+                            <ul>
+                                <li class="cta btn-secondary brand-option">All</li>
+                                <li class="cta btn-secondary brand-option">Vans</li>
+                                <li class="cta btn-secondary brand-option">Nike</li>
+                            </ul>
                         </div>
-                        <div>
-                            <input type="radio" name="shoe-size" id="price-2">
-                            <label for="price-2">43</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="shoe-size" id="price-3">
-                            <label for="price-3">44</label>
-                        </div>
-                    </fieldset>
-                    <button type="submit" class="cta btn-primary">Place Order</button>
-                </form>
-            </div>
-            <div class="other-products">
-                <div class="part-heading">
-                    <h1>Other Shoes</h1>
+                    </div>
                 </div>
-                <div class="items">
-                    <a class="item" href="./item.html">
+            </div>
+            <section class="product-list">
+                <acticle class="product">
+                    <div class="product-img">
                         <picture>
                             <img src="https://images.unsplash.com/photo-1579446565308-427218a2c60e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTF8fHNuZWFrZXJzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
                         </picture>
-                    </a>
-                    <a class="item" href="./item.html">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-name">Shoe Name</h2>
+                        <h3 class="product-price">100,000</h3>
+                        <a href="./item.html" class="cta btn-primary ">Add To Cart</a>
+                    </div>
+                </acticle>
+                <acticle class="product">
+                    <div class="product-img">
                         <picture>
                             <img src="https://images.unsplash.com/photo-1581619883162-4a1aa0a6a0c4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIzfHxzbmVha2Vyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
                         </picture>
-                    </a>
-                    <a class="item" href="./item.html">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-name">Shoe Name</h2>
+                        <h3 class="product-price">100,000</h3>
+                        <a href="./item.html" class="cta btn-primary ">Add To Cart</a>
+                    </div>
+                </acticle>
+                <acticle class="product">
+                    <div class="product-img">
                         <picture>
                             <img src="https://images.unsplash.com/photo-1580906853149-f82f7601d205?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA5fHxzbmVha2Vyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
                         </picture>
-                    </a>
-                    <a class="item" href="./item.html">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-name">Shoe Name</h2>
+                        <h3 class="product-price">100,000</h3>
+                        <a href="./item.html" class="cta btn-primary ">Add To Cart</a>
+                    </div>
+                </acticle>
+                <acticle class="product">
+                    <div class="product-img">
                         <picture>
-                            <img src="https://images.unsplash.com/photo-1465453869711-7e174808ace9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fHNuZWFrZXJzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                            <img src="https://images.unsplash.com/photo-1621665421558-831f91fd0500?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA1fHxzbmVha2Vyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
                         </picture>
-                    </a>
-                    <a class="item" href="./item.html">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-name">Shoe Name</h2>
+                        <h3 class="product-price">100,000</h3>
+                        <a href="./item.html" class="cta btn-primary ">Add To Cart</a>
+                    </div>
+                </acticle>
+                <acticle class="product">
+                    <div class="product-img">
                         <picture>
-                            <img src="https://images.unsplash.com/photo-1549298916-f52d724204b4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNuZWFrZXJzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                            <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTZ8fHNuZWFrZXJzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
                         </picture>
-                    </a>
-                    <a class="item" href="./item.html">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-name">Shoe Name</h2>
+                        <h3 class="product-price">100,000</h3>
+                        <a href="./item.html" class="cta btn-primary ">Add To Cart</a>
+                    </div>
+                </acticle>
+                <acticle class="product">
+                    <div class="product-img">
                         <picture>
-                            <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTB8fHNuZWFrZXJzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
                         </picture>
-                    </a>
-                </div>
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-name">Shoe Name</h2>
+                        <h3 class="product-price">100,000</h3>
+                        <a href="./item.html" class="cta btn-primary ">Add To Cart</a>
+                    </div>
+                </acticle>
+            </section>
+            
+            <div class="pagination">
+                <a href="#" class="cta btn-secondary">1</a href="#">
+                <a href="#" class="cta btn-secondary active">2</a href="#">
+                <a href="#" class="cta btn-secondary">3</a href="#">
+                <a href="#" class="cta btn-secondary">...</a href="#">
             </div>
         </section>
         <div class="loader">

@@ -17,8 +17,8 @@ const showLoader = () => {
     document.querySelector("body").classList.toggle("hidden")
     document.querySelector(".loader").classList.toggle("show")
     setTimeout(() => {
-        document.querySelector("body").classList.toggle("hidden")
         document.querySelector(".loader").classList.toggle("show")
+        document.querySelector("body").classList.toggle("hidden")
     },2000)
 }
 
@@ -69,14 +69,16 @@ document.querySelectorAll(".brand-option").forEach((option) => {
     })
 })
 
-VanillaTilt.init(document.querySelector(".intro-pics"), {
-    max: 15,
-    speed: 400
-});
 
 //It also supports NodeList
-VanillaTilt.init(document.querySelectorAll(".intro-pics"));
-
+if(window.innerWidth > 500)
+{
+    VanillaTilt.init(document.querySelector(".intro-pics"), {
+        max: 15,
+        speed: 400
+    });
+    VanillaTilt.init(document.querySelectorAll(".intro-pics"));    
+}
 
 
 const cartCountInput = document.querySelector("#cartCount");
@@ -107,3 +109,4 @@ document.querySelector("#increase-count")
     // change total price
     totalItemPrice.textContent = parseInt(totalItemPrice.textContent) + (parseInt(totalItemPrice.textContent) / cartCountInput.value)
 });
+
